@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>J J Bakers | Home</title>
+	<link href="images/logo.png" rel="icon">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.0/animate.compat.min.css" integrity="sha512-uUsJnYcswxI6Vy2g88USOAD351ljY8pWr98HTXVSxQ4/uT43nzlGk91EAsvO5fOzw9QtBPFaw9tgZPSrxvM3RA==" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<script src="https://use.fontawesome.com/1e5c3fb66c.js"></script>
+	<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+	<style>
+	body{
+		font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	}
+	.textcolor{
+		color : #ff5500;
+	}
+	.hcolor{
+		color : #413f3f;	
+	}
+
+	#fp1{
+		background : url('images/1.jpg');
+	}
+	#fp2{
+		background : url('images/2.jpg');
+	}
+	#fp3{
+		background : url('images/3.jpg');
+	}
+	#fp4{
+		background : url('images/4.jpg');
+	}
+	#fp5{
+		background : url('images/5.jpg');
+	}
+	.carousel #fp1,#fp2,#fp3,#fp4,#fp5{
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+	}
+	.carousel-cell h1{
+		color: transparent;
+		transition: 1s;
+	}
+	.carousel-cell h1:hover{
+		transition: 1s;
+		color : #ff5500;
+		background: rgba(0,0,0,0.5);
+	}
+	
+	.carousel-cell {
+  		width: 56%;
+  		min-height: 360px;
+	  	margin-right: 10px;
+	  	border-radius: 5px;
+	}
+
+	/* cell number */
+	.carousel-cell:before {
+  		display: block;
+  		text-align: center;
+  		content: counter(carousel-cell);
+  		line-height: 200px;
+  		font-size: 80px;
+  		color: transparent;
+	}
+	.box{
+	border: 5px solid #f5f5f5;
+	background: linear-gradient(to top right,#fff 10%,#000 100%);
+	font-family: 'Raleway', sans-serif;
+	text-align: center;
+	box-shadow: 0 0 15px 5px rgba(0,0,0,.07);
+	overflow: hidden;
+	position: relative;
+}
+.box:before{
+	content: "";
+	width: 50%;
+	height: 75%;
+	border-top: 208px solid rgba(7,0,2,.3);
+	border-left: 140px solid rgba(240,74,126,.6);
+	border-bottom: 188px solid transparent;
+	border-right: 160px solid transparent;
+	position: absolute;
+	top: 0;
+	left: -230px;
+	z-index: 1;
+	transition: all .4s ease-in-out;
+}
+.box:hover:before{
+	border-top: 325px solid rgba(240,74,126,.8);
+	border-left: 422px solid rgba(240,74,126,.8);
+	border-bottom: 218px solid transparent;
+	border-right: 160px solid transparent;
+	transform: rotate3d(0,0,1,52deg) scale3d(1,1,1);
+	top: 103px;
+	left: -350px;
+}
+.box img{
+	width: 100%;
+	height: auto;
+	transform: scale(1,1);
+	transition: all .3s ease-in-out;
+}
+.box:hover img{
+	opacity: .7;
+	transform: scale(1.1,1.1);
+}
+.box .box-content{
+	color: #fff;
+	background-color: rgba(240,74,126,.8);
+	width: 60%;
+	padding: 10px 10px;
+	transform: scale(0);
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	transition: all .5s ease-in-out;
+}
+.box:hover .box-content{ transform: scale(1); }
+.box .title{
+	font-size: 20px;
+	font-weight: 700;
+	letter-spacing: 0.5px;
+	text-transform: uppercase;
+	margin: 0;
+}
+.box .post{
+	font-size: 15px;
+	font-weight: 500;
+	font-style: italic;
+	text-transform: capitalize;
+	display: block;
+}
+.box .icon{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	position: absolute;
+	left: 10px;
+	bottom: 10px;
+	z-index: 1;
+	transition: all .5s ease-in-out;
+}
+.box .icon li{
+	margin: 0 3px 0 0;
+	display: inline-block; 
+	opacity: 0;
+	transition: all 0.5s ease-in-out;
+}
+.box:hover .icon li{ opacity: 1; }
+.box:hover .icon li:nth-child(1){ transition-delay: .2s; }
+.box:hover .icon li:nth-child(2){ transition-delay: .3s; }
+.box .icon li a{
+	color: #f04a7e99;
+	background-color: #fff;
+	font-size: 16px;
+	line-height: 28px;
+	height: 30px;
+	width: 30px;
+	border: 2px dotted transparent;
+	border-radius: 50%;
+	display: block;
+	transform: rotate(0);
+	transition: all 0.3s;
+}
+.box .icon li a:hover{
+	color: #f44178;
+	background:#fff;
+	border-color: #f44178;
+	transform: rotate(360deg);
+}
+.btn-amit{
+	border : 1px solid #ff5500;
+	background-color: #ff5500;
+	color: #fff;
+}
+.btn-amit:hover{
+	border: 1px solid #ff5500;
+	background-color: #fff;
+	color: #ff5500;
+}
+@media only screen and (max-width:990px){
+	.box{ margin: 0 0 30px; }
+}
+
+	</style>
+</head>
+
+<body onload="loader()">
+	<!-- Preloader Code -->
+	<div id="loading">
+
+	</div>
+	<!-- Preloader Code -->
+
+	<div class="container-fluid" style="min-height: auto;" id="home">
+		<div class="row" style="min-height: 550px;background:url('images/blur-1869227_1280.jpg');background-size: 100% 100%;">
+			<div class="w-100" style="background: rgba(0,0,0,0.5);">
+				<!-- Load an icon library -->
+
+				<div class="topnav" id="myTopnav">
+					<a href="#">
+						<h4>J J Bakers </h4>
+					</a>
+					<a class="active" href="index.html"><i class="fa fa-fw fa-home"></i> Home</a>
+	            	<a href="about.html"><i class="fa fa-fw fa-info-circle"></i> About Us</a>
+            		<a href="customize.html"><i class="fa fa-fw fa-edit"></i> Customize</a>
+            		<a href="faq.html"><i class="fa fa-fw fa-question-circle"></i> Faq</a>
+	            	<a href="locate.html"><i class="fa fa-fw fa-map-marker"></i> Locate Us</a>
+	            	<a href="order.html"><i class="fa fa-fw fa-truck"></i> Order Online</a>
+					<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+						<i class="fa fa-bars" style="font-size: 26px;"></i>
+					</a>
+				</div>
+				<div class="container">
+					<div class="col-sm-12" style="min-height: 270px;">
+
+					</div>
+					<div class="container-fluid text-center text-white">
+						<h1>To Create Endless Happy Moments For You!</h1>
+						<h3 class="textcolor">
+							<marquee>We offer same day delivery till 4:00 PM. Delivery time 12:00 PM - 7:00 PM</marquee>
+						</h3>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- About Us -->
+
+		<div class="row">
+			<div class="container my-4">
+				<p class="h1 text-center textcolor"> About Us</p>
+			</div>
+			<div class="container">
+				<p class="hcolor lead text-justify">
+					JJ Bakers one of the best bakery shop in Lucknow provides online cake delivery in Lucknow, anniversary cakes, gift boxes, Diwali gift items, gift hampers and customized cakes. You can order best gift cakes, chocolates, birthday cakes, cookies and biscuits in Lucknow from us. We also help you to send cakes to Lucknow or buy best cakes online in Lucknow.
+				</p>
+			</div>
+
+		</div>
+		<!-- About Us -->
+
+		<!-- Feature Products -->
+		<div class="row text-center my-1">
+			<div class="container text-center">
+				<p class="h1 textcolor">
+					Feature Products
+				</p>
+				<p class="h4 hcolor" style="font-weight: 400;"> With the largest variety of cakes & pastries, we have carved a niche for ourselves. </p>
+			</div>
+
+			<div class="container-fluid">
+				<div class="carousel" data-flickity='{ "wrapAround": true }'>
+			  		<div class="carousel-cell" id="fp1"><h1 class="mt-5 p-3">Pastries</h1></div>
+  					<div class="carousel-cell" id="fp2"><h1 class="mt-5 p-3">Apple Cake</h1></div>
+  					<div class="carousel-cell" id="fp3"><h1 class="mt-5 p-3">Butter Cake</h1></div>
+  					<div class="carousel-cell" id="fp4"><h1 class="mt-5 p-3">Chocolate Cake</h1></div>
+  					<div class="carousel-cell" id="fp5"><h1 class="mt-5 p-3">Chiffon Cake</h1></div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Feature Products -->
+
+		<!-- Most Reviews Products -->
+		<div class="row my-5">
+			<div class="container text-center">
+				<p class="h1 textcolor">Most Reviews</p>
+				<p class="h4 hcolor"> Make Your Special Days Memorable. </p>
+			</div>
+			<div class="container-fluid">
+				<div class="col-md-3 col-sm-6 float-left my-1">
+					<div class="card">
+						<img class="card-img-top" src="images/6.jpg" alt="Card image cap">
+						<div class="card-body">
+						  <h5 class="card-title textcolor">Batik Cake</h5>
+						  <p class="card-text hcolor">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+						  <a href="#" class="btn btn-amit">Go somewhere</a>
+						</div>
+					  </div>
+				</div>
+				<div class="col-md-3 col-sm-6 float-left my-1">
+					<div class="card">
+						<img class="card-img-top" src="images/7.jpg" alt="Card image cap">
+						<div class="card-body">
+						  <h5 class="card-title textcolor">Beer Cake</h5>
+						  <p class="card-text hcolor">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+						  <a href="#" class="btn btn-amit">Go somewhere</a>
+						</div>
+					  </div>
+				</div>
+				<div class="col-md-3 col-sm-6 float-left my-1">
+					<div class="card">
+						<img class="card-img-top" src="images/8.jpg" alt="Card image cap">
+						<div class="card-body">
+						  <h5 class="card-title textcolor">Bundt Cake</h5>
+						  <p class="card-text hcolor">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+						  <a href="#" class="btn btn-amit">Go somewhere</a>
+						</div>
+					  </div>
+				</div>
+				<div class="col-md-3 col-sm-6 float-left my-1">
+					<div class="card">
+						<img class="card-img-top" src="images/9.jpg" alt="Card image cap">
+						<div class="card-body">
+						  <h5 class="card-title textcolor">Chestnut Cake</h5>
+						  <p class="card-text hcolor">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+						  <a href="#" class="btn btn-amit">Go somewhere</a>
+						</div>
+					  </div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Most Reviews Product -->
+
+		<div class="row bg-dark">
+			<div class="col-md-4 col-sm-12 pt-2 text-center" style="font-size: 25px;">
+				<a href="#" style="text-decoration: none;color:#fff;"><i class="fa fa-fw fa-facebook"></i></a>
+				<a href="#" style="text-decoration: none;color:#fff;"><i class="fa fa-fw fa-instagram"></i></a>
+				<a href="#" style="text-decoration: none;color:#fff;"><i class="fa fa-fw fa-whatsapp"></i></a>
+				<a href="#" style="text-decoration: none;color:#fff;"><i class="fa fa-fw fa-twitter"></i></a>
+			</div>
+
+			<div class="col-md-4 col-sm-12 text-center text-white pt-2">
+				<p class="h5"><i class="fa fa-fw fa-code"></i>Developed By - Amit Kumar<i class="fa fa-fw fa-code"></i></p>
+			</div>
+
+			<div class="col-md-4 col-sm-12 text-white text-center pt-2">
+				<p style="font-size: 20px;"> Contact No. - +91 6306296768 <a href="#" style="text-decoration: none;color: white;margin-top: 7px;"><i class="fa fa-fw fa-arrow-up"></i></p>
+			</div>
+
+		</div>
+
+	</div>
+
+	</div>
+	<script type="text/javascript">
+		/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+		function myFunction() {
+			var x = document.getElementById("myTopnav");
+			if (x.className === "topnav") {
+				x.className += " responsive";
+			} else {
+				x.className = "topnav";
+			}
+		}
+		/*  Preloader Script */
+		var preloader = document.getElementById('loading');
+
+		function loader() {
+			preloader.style.display = "none";
+		}
+		/*  Preloader Script */
+	</script>
+</body>
+
+</html>

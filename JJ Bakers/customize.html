@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JJ Bakers | Customize</title>
+    <link href="images/logo.png" rel="icon" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.0/animate.compat.min.css"
+      integrity="sha512-uUsJnYcswxI6Vy2g88USOAD351ljY8pWr98HTXVSxQ4/uT43nzlGk91EAsvO5fOzw9QtBPFaw9tgZPSrxvM3RA=="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://use.fontawesome.com/1e5c3fb66c.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <style>
+      body {
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      }
+      .textcolor {
+        color: #ff5500;
+      }
+      .hcolor {
+        color: #413f3f;
+      }
+      #loading
+	{
+		position : fixed;
+		width  : 100%;
+		height : 100vh;
+		background : #fff url('images/pre2.gif') no-repeat center;
+		z-index : 99999;
+	}
+    </style>
+  </head>
+
+  <body onload="loader()">
+    <!-- Preloader Code -->
+    <div id="loading"></div>
+    <!-- Preloader Code -->
+
+<!-- Main Code Started Here     -->
+    <div class="container-fluid">
+        <div class="row bg-dark">
+        <div class="topnav" id="myTopnav">
+            <a href="#">
+                <h4>J J Bakers </h4>
+            </a>
+            <a href="index.html"><i class="fa fa-fw fa-home"></i> Home</a>
+            <a href="about.html"><i class="fa fa-fw fa-info-circle"></i> About Us</a>
+            <a class="active" href="customize.html"><i class="fa fa-fw fa-edit"></i> Customize</a>
+            <a href="faq.html"><i class="fa fa-fw fa-question-circle"></i> Faq</a>
+            <a href="locate.html"><i class="fa fa-fw fa-map-marker"></i> Locate Us</a>
+            <a href="order.html"><i class="fa fa-fw fa-truck"></i> Order Online</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars" style="font-size: 26px;"></i>
+            </a>
+        </div>
+    </div>
+        <div class="container-fluid">
+            <p class="h1 text-center my-4  textcolor">Customize</p>
+            <div class="container text-justify hcolor">
+                
+            </div>
+        </div>
+        <div class="row bg-dark">
+			<div class="col-md-4 col-sm-12 pt-2 text-center" style="font-size: 25px;">
+				<a href="#" style="text-decoration: none;color:#fff;"><i class="fa fa-fw fa-facebook"></i></a>
+				<a href="#" style="text-decoration: none;color:#fff;"><i class="fa fa-fw fa-instagram"></i></a>
+				<a href="#" style="text-decoration: none;color:#fff;"><i class="fa fa-fw fa-whatsapp"></i></a>
+				<a href="#" style="text-decoration: none;color:#fff;"><i class="fa fa-fw fa-twitter"></i></a>
+			</div>
+
+			<div class="col-md-4 col-sm-12 text-center text-white pt-2">
+				<p class="h5"><i class="fa fa-fw fa-code"></i>Developed By - Amit Kumar<i class="fa fa-fw fa-code"></i></p>
+			</div>
+
+			<div class="col-md-4 col-sm-12 text-white text-center pt-2">
+				<p style="font-size: 20px;"> Contact No. - +91 6306296768 <a href="#" style="text-decoration: none;color: white;margin-top: 7px;"><i class="fa fa-fw fa-arrow-up"></i></p>
+			</div>
+
+		</div>
+    </div>
+<!-- Main Code Ended Here     -->
+
+    <!-- Sript Code Here  -->
+
+    <script type="text/javascript">
+      /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+      /*  Preloader Script */
+      var preloader = document.getElementById("loading");
+
+      function loader() {
+        preloader.style.display = "none";
+      }
+      /*  Preloader Script */
+    </script>
+  </body>
+</html>
