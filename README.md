@@ -1,2 +1,0 @@
-# jjbakers
-JJ Bakers Luknow
